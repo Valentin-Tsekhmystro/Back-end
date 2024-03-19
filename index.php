@@ -10,7 +10,6 @@ if (isset($_GET['search'])) {
     $response = curl_exec($curl);
     curl_close($curl);
     $data = json_decode($response, true);
-    var_dump($data);
     $items = $data['items'];
 }
 ?>
